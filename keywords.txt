@@ -1,0 +1,28 @@
+#######################################
+# Syntax Coloring Map for LM35
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+LM35Thermometer	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+setSamples		KEYWORD2
+setHighRes		KEYWORD2
+read			KEYWORD2
+getLastRead		KEYWORD2
+toFahrenheit	KEYWORD2
+toKelvin		KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+HIGH_RES	LITERAL1
+LOW_RES		LITERAL1
+
