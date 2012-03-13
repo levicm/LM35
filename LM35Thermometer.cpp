@@ -16,16 +16,31 @@
 // Constructor /////////////////////////////////////////////////////////////////
 // Function that handles the creation and setup of instances
 Thermometer::Thermometer(void) {
-  Thermometer(500);
+  // initialize this instance's variables
+  setSamples(500);
+  setHighRes(false);
 }
 
 Thermometer::Thermometer(int pSamples) {
-  Thermometer(pSamples, false);
+  // initialize this instance's variables
+  setSamples(pSamples);
+  setHighRes(false);
 }
 
 Thermometer::Thermometer(int pSamples, bool pHighRes) {
   // initialize this instance's variables
+  setSamples(pSamples);
+  setHighRes(pHighRes);
+}
+
+// Public Methods //////////////////////////////////////////////////////////////
+// Functions available in Wiring sketches, this library, and other libraries
+
+void Thermometer::setSamples(int pSamples) {
   samples = pSamples;
+}
+
+void Thermometer::setHighRes(bool pHighRes) {
   highRes = pHighRes;
   if (highRes) {
     analogReference(HIGH_RES);
@@ -34,16 +49,11 @@ Thermometer::Thermometer(int pSamples, bool pHighRes) {
   }
 }
 
-// Public Methods //////////////////////////////////////////////////////////////
-// Functions available in Wiring sketches, this library, and other libraries
-
-void Thermometer::setSamples(int pSamples) {
-}
-
-void Thermometer::setHighRes(bool pHighRes) {
-}
-
 double Thermometer::read(int port) {
+  Serial.println(port);
+  Serial.println(samples);
+  Serial.println(highRes);
+  Serial.println(analogRead(port));
   double tempSensor = 0.0;
   for (int i = 0; i < samples; i++) {
     if (highRes) {
