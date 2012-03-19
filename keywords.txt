@@ -6,8 +6,8 @@
 # Datatypes (KEYWORD1)
 #######################################
 
-LM35Thermometer	KEYWORD1
-Thermometer		KEYWORD1
+LM35		KEYWORD1
+LM35Sensor	KEYWORD1
 
 #######################################
 # Methods and Functions (KEYWORD2)
@@ -16,9 +16,9 @@ Thermometer		KEYWORD1
 setSamples		KEYWORD2
 setHighRes		KEYWORD2
 read			KEYWORD2
-getLastRead		KEYWORD2
-toFahrenheit	KEYWORD2
-toKelvin		KEYWORD2
+getCelsius		KEYWORD2
+getFahrenheit	KEYWORD2
+getKelvin		KEYWORD2
 
 #######################################
 # Constants (LITERAL1)
