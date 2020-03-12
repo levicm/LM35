@@ -1,6 +1,6 @@
 /*
   LM35.cpp - Temperature Sensor Library for use LM35 - implementation
-  Copyright (c) 2012 Levi Mota.  All right reserved.
+  2012 - Levi Mota
 */
 
 // include core Wiring API
