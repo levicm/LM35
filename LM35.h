@@ -1,6 +1,6 @@
 /*
   LM35.h - Temperature Sensor Library for use LM35 - description
-  Copyright (c) 2012 Levi Mota.  All right reserved.
+  2012 - Levi Mota.
 */
 
 // ensure this library description is only included once
